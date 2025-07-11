@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>236863152841-5mhujgnoep71p3purp0g00a9apaolo8b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.236863152841-5mhujgnoep71p3purp0g00a9apaolo8b</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>236863152841-pmet7oeb43bg2dbc6r6rffs2bj003ah5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyALg3IsQ2tKk3TcVs_uvZqa80bDn1KAcZ4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>236863152841</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.akillibidik.app</string>
+	<key>PROJECT_ID</key>
+	<string>bidik-72b6e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bidik-72b6e.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:236863152841:ios:a518c2d16aa150e2b46318</string>
+</dict>
+</plist>
