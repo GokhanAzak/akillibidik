@@ -7,28 +7,28 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:236863152841:android:fe2608af7d029691b46318",
+        "mobilesdk_app_id": "",
         "android_client_info": {
           "package_name": "com.akillibidik"
         }
       },
       "oauth_client": [
         {
-          "client_id": "236863152841-pmet7oeb43bg2dbc6r6rffs2bj003ah5.apps.googleusercontent.com",
+          "client_id": "-.apps..com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.akillibidik",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+            "certificate_hash": ""
           }
         },
         {
-          "client_id": "236863152841-qqipoe2s8nu6nbr52o6932aa9qkbl1gm.apps.googleusercontent.com",
+          "client_id": "-.apps..com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC8TgPLQaSYu5VYvbvBJ3pT6Ud7FxskwRE"
+          "current_key": ""
         }
       ],
       "services": {
