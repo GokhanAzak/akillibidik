@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import auth from '@react-native-firebase/auth';
-
-const user = auth().currentUser;
+import { getAuth } from '@react-native-firebase/auth';
 
 const ProfileScreen = () => {
+  const user = getAuth().currentUser;
+
   const handleLogout = async () => {
     try {
-      await auth().signOut();
+      await getAuth().signOut();
     } catch (error) {
       Alert.alert('Çıkış Hatası', 'Çıkış yapılamadı.');
     }

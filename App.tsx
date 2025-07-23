@@ -16,6 +16,9 @@ import RegisterScreen from './screens/RegisterScreen';
 import StoriesScreen from './screens/StoriesScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import SettingsScreen from './screens/SettingsScreen';
+import StoryDetailScreen from './screens/StoryDetailScreen';
+import AiTalk from './screens/AiTalk';
+
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -36,6 +39,7 @@ const TabNavigator = () => (
         if (route.name === 'Stories') iconName = 'book-open-page-variant';
         else if (route.name === 'Profile') iconName = 'account-circle';
         else if (route.name === 'Settings') iconName = 'cog';
+        else if (route.name === 'AiTalk') iconName = 'phone';
         return <Icon name={iconName} color={color} size={size} />;
       },
     })}
@@ -43,6 +47,7 @@ const TabNavigator = () => (
     <Tab.Screen name="Stories" component={StoriesScreen} options={{ title: 'Hikayeler' }} />
     <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profil' }} />
     <Tab.Screen name="Settings" component={SettingsScreen} options={{ title: 'Ayarlar' }} />
+    <Tab.Screen name="AiTalk" component={AiTalk} options={{ title: 'AiTalk' }} />
   </Tab.Navigator>
 );
 
@@ -65,11 +70,18 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         {user ? (
-          <Stack.Screen name="Main" component={TabNavigator} options={{ headerShown: false }} />
+          <>
+            <Stack.Screen name="Main" component={TabNavigator} options={{ headerShown: false }} />
+            <Stack.Screen name="StoryDetail" component={StoryDetailScreen} />
+          </>
         ) : (
           <>
             <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Giriş Yap' }} />
             <Stack.Screen name="Register" component={RegisterScreen} options={{ title: 'Kayıt Ol' }} />
+            <Stack.Screen name="Stories" component={StoriesScreen} />
+            <Stack.Screen name="StoryDetail" component={StoryDetailScreen} />
+            <Stack.Screen name="AiTalk" component={AiTalk}  options={{ title: 'AI Conversation' }} />
+            
           </>
         )}
       </Stack.Navigator>
